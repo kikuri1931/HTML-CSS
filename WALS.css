@@ -83,32 +83,32 @@ li {
 	overflow: hidden;
 	padding-bottom: 80px;
 }
-.portfolio-box {
+.portfolio-box1, .portfolio-box2, .portfolio-box3, .portfolio-box4, .portfolio-box5, .portfolio-box6 {
 	float: left;
 	width: 300px;
 	height: 250px;
 	background-size: cover;
 	background-position: center;
 }
-.portfolio-box:not(:nth-child(3n)) {
+.portfolio-box1, .portfolio-box2, .portfolio-box4, .portfolio-box5 {
 	margin: 0 10px 10px 0;
 }
-.portfolio-box:nth-child(1) {
+.portfolio-box1 {
 	background-image: url(img/sketch.jpg);
 }
-.portfolio-box:nth-child(2) {
+.portfolio-box2 {
 	background-image: url(img/websuku.png);
 }
-.portfolio-box:nth-child(3) {
+.portfolio-box3 {
 	background-image: url(img/write.jpg);
 }
-.portfolio-box:nth-child(4) {
+.portfolio-box4 {
 	background-image: url(img/webcamp.png);
 }
-.portfolio-box:nth-child(5) {
+.portfolio-box5 {
 	background-image: url(img/talk.jpg);
 }
-.portfolio-box:nth-child(6) {
+.portfolio-box6 {
 	background-image: url(img/webcamp-mother.png);
 }
 #feature {
@@ -118,14 +118,14 @@ li {
 .feature-comment {
 	overflow: hidden;
 }
-.comment {
+.comment1, .comment2, .comment3 {
 	font-size: 60px;
 	float: left;
 	width: 320px; 
 	padding-bottom: 90px;
 	text-align: center;
 }
-.comment:not(:nth-child(3n)) {
+.comment1, .comment2 {
 	margin-right: 10px;
 }
 .fa-large {
@@ -135,7 +135,7 @@ li {
 	font-size: 20px;
 	margin: 10px 0;
 }
-.comment-text {
+.comment-text, .comment-text1 {
 	text-align: left;
 }
 #profile {
@@ -206,7 +206,9 @@ footer {
 	line-height: 60px;
 	color: #fafafa;
 }
-@media screen and (max-width: 1024px) {
+
+
+@media screen and (max-width: 768px) {
 	header {
 		height: 50px;
 	}
@@ -254,7 +256,7 @@ footer {
 		width: 90%;
     margin: 0 auto;	
 	}
-	.portfolio-box {
+	.portfolio-box1, .portfolio-box2, .portfolio-box3, .portfolio-box4, .portfolio-box5, .portfolio-box6 {
 		display: none;
 	}
 	.portfolio-box-sp1, .portfolio-box-sp2, .portfolio-box-sp3 {
@@ -291,7 +293,15 @@ footer {
     padding: 20px 0 5px;
     text-align: center;
 	}
-	.comment-text {
+	.comment1, .comment2, .comment3 {
+		float: none;
+		margin: 10px auto 0;
+		padding: 0;
+	}
+	.comment3 {
+		padding-bottom: 90px;
+	}
+	.comment-text1 {
     text-align: center;
 	}
 	#contact {
